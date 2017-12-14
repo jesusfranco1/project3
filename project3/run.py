@@ -14,3 +14,7 @@ def home():
 def rendercrimes():
     #data = crimerate.execute()
     return render_template('crimeheatmap.html')
+
+@app.route('/kmeans')
+def kmeans():
+    return render_template('kmeans.html')
