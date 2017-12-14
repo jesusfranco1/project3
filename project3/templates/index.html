@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Deciding where to place your next food business</h1>
-    <p>Before you decide on where to place your next food establishement consider some cases, such as crimes around the location</p>
-    <a href="{{ url_for('rendercrimes') }}">Vizualize crimes based on location</a>
-    <p>Or see what is the based place to put a business based on properties!<p>
-    <a href="{{url_for('kmeans')}}">View Kmeans!</a>
+    <div class="content">
+      <h1>Restaurant Bussiness advisor.</h1>
+      <p>Before you decide on where to place your next food establishement consider some cases, such as crimes around the location</p>
+      <a href="{{ url_for('rendercrimes') }}">Vizualize crimes based on location</a>
+      <p>Or see what is the based place to put a business based on properties!<p>
+      <a href="{{url_for('kmeans')}}">View Kmeans!</a>
+    </div>
   </body>
+  <style>
+  body{
+    background-color:#e0e0e1;
+  }
+  .content{
+    font-family: sans-serif;
+    height: 70%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: :10px;
+
+  }
+  h1{
+    margin-left: 30%;
+    color:#5a5a5e;
+    font-weight: lighter;
+  }
+  p{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    color:#5a5a5e;
+    font-weight: lighter;
+  }
+  a{
+    margin-left: 40%;
+    text-decoration: none;
+    background-color: #5a5a5e;
+    padding: 10px 10px 10px 10px;
+    color:white;
+    font-weight: lighter;
+  }
+  </style>
 </html>
