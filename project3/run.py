@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from crimerate import crimerate
+#from crimerate import crimerate
 import json
 import os
 
